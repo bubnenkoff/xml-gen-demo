@@ -6,19 +6,6 @@ arch_folder = "archives"
 csv_1_dict = dict() # тут по идее строка будет уникальнее чем число
 csv_2_dict = dict() # ключем будет значение из object
 
-# в данном мы геренирируем всего 2 csv файла для всех xml
-# т.к. XML у секций значения случайны, но не уникальны, то в данной реализации могут быть коллизии т.к. для формирования мы используем словари
-# пример второго csv файла:
-## maLryz jxIteh
-## jtzKlc Bgklrt
-## ZvFPFB nlERio
-## CevoJO nlERio
-## wcjZtl nlERio
-## pGwEou dkfWjd
-## ttGVYb dkfWjd
-## yCvCUs dkfWjd
-
-# никаких оптимизаций по производительности в данной версии нет
 
 def parse_xml(file):
     csv_1_list = []
